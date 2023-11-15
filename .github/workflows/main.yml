@@ -1,4 +1,4 @@
-name: Run Gradle on PRs
+name: Run Gradle
 on: push
 jobs:
   gradle:
@@ -17,5 +17,7 @@ jobs:
       run: ./gradlew build
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v2.0.2
+      env:
+        SONAR_TOKEN: fe2e1284c1bdbeabb44f301d13f539ae52633ada
      
        
