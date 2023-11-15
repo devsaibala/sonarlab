@@ -14,7 +14,8 @@ jobs:
       uses: gradle/gradle-build-action@v2
     
     - name: Execute Gradle build
-      run: ./gradlew build
+      run: ./gradlew clean build
+      
     - name: SonarCloud Scan
       uses: jinguji/sonarcloud-gradle-github-action@v2
       env:
