@@ -17,8 +17,7 @@ jobs:
       run: ./gradlew clean build
       
     - name: SonarCloud Scan
-      uses: jinguji/sonarcloud-gradle-github-action@v2
-      env:
-        SONAR_TOKEN: fe2e1284c1bdbeabb44f301d13f539ae52633ada
+      run: |
+        ./gradle-4.10.1/bin/gradle sonarqube 
      
        
