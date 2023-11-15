@@ -38,6 +38,7 @@ sonarqube {
 		property 'sonar.host.url', 'https://sonarcloud.io'
 		property 'sonar.organization', 'devsaibala'
 		property 'sonar.projectKey', 'sonarlab'
+		property 'sonar.java.source', '1.8'
 
 	}
 }
