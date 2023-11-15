@@ -16,7 +16,7 @@ jobs:
     - name: Execute Gradle build
       run: ./gradlew build
     - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@v2.0.2
+      uses: jinguji/sonarcloud-gradle-github-action@v2
       env:
         SONAR_TOKEN: fe2e1284c1bdbeabb44f301d13f539ae52633ada
      
