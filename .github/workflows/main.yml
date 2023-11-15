@@ -15,3 +15,7 @@ jobs:
     
     - name: Execute Gradle build
       run: ./gradlew build
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v2.0.2
+     
+       
